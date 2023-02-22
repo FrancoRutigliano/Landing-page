@@ -37,7 +37,6 @@ h2,
   text-transform: uppercase;
 }
 
-
 .mobile-menu,
 .desktop-menu{
   display: none;
@@ -70,7 +69,6 @@ h2,
   font-size: 1.5rem;
   cursor: pointer;
 }
-
 
 .hero-content{
   flex-grow: 1;
@@ -119,7 +117,6 @@ h2,
   color: var(--white);
   font-size: 1.5rem;
 }
-
 
 main{
   padding: 3rem 1.5rem;
@@ -307,7 +304,6 @@ footer{
 }
 
 
-
 @media screen and (min-width: 800px) {
 
   .logo{
@@ -454,8 +450,6 @@ footer{
     font-size: 1.5rem;
   }
 
-
-
   .creations__grid  > div:nth-child(1){
     background-image: url(../images/desktop/image-deep-earth.jpg);
   }
@@ -498,7 +492,6 @@ footer{
   .icons-copyright a{
     align-items: end;
   }
-
 
 }
 
