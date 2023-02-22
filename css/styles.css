@@ -155,6 +155,7 @@ main{
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: center;
 }
 
 .creations > h2{
@@ -165,6 +166,7 @@ main{
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
 }
 
 .creations__grid > div{
@@ -218,7 +220,83 @@ main{
   background-image: url(../images/mobile/image-fisheye.jpg);
 }
 
+.btn {
+  font-family: var(--text);
+  text-transform: uppercase;
+  border: 1px solid var(--black);
+  background: white;
+  color: black;
+  font-size: .7rem;
+  padding: .5rem 2.8rem;
+  width: max-content;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  transition: 0.15ms;
+  cursor: pointer;
+  font-weight: bold;
+} 
 
+.btn:hover{
+  background-color: black;
+  color: white;
+}
+
+footer{
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo-menu,
+.icons-copyright{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-menu ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-menu ul li a {
+  font-family: var(--text);
+  color: var(--white);
+  font-size: .75rem;
+  transition: 0.15ms;
+}
+
+.footer-menu ul li a:hover{
+  color: pink;
+}
+
+.icons{
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.icons a {
+  color: var(--white);
+  transition: .15ms;
+}
+
+.icons a:hover {
+  color: pink;
+}
+
+.copyright {
+  color: var(--dark-gray);
+  font-size: .75rem;
+}
 
 .disabled{
   display: none;
