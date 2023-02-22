@@ -309,10 +309,25 @@ footer{
 
 
 @media screen and (min-width: 800px) {
+
+  .logo{
+    width: 10rem;
+  }
+
   .hero{
     background-image: url(../images/desktop/image-hero.jpg);
-    padding: 2rem 6rem;
+    padding: 4rem 6rem;
     min-height: 90vh;
+    position: relative;
+    isolation: isolate;
+  }
+
+  .hero::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .50);
+    z-index: -1;
   }
 
   .hero-content {
@@ -320,9 +335,10 @@ footer{
   }
 
   .hero-content p{
-    padding-right: 600px; /* Revisar la anchura de esto */
+    padding: 40px;
     font-size: 4rem;
     line-height: 60px;
+    max-width: 690px;
   }
 
   .open-menu {
@@ -337,6 +353,15 @@ footer{
     list-style-type: none;
     display: flex;
     gap: 2rem;
+    transition: 0.15s ease-in;
+  }
+
+  .desktop-menu ul a{
+    padding: 6px 8px;
+  }
+
+  .desktop-menu ul a:hover{
+    color: pink;
   }
 
   .desktop-menu ul li a {
@@ -375,6 +400,7 @@ footer{
   .intro-info h2 {
     word-spacing: 2px;
     font-size: 2.3rem;
+    font-weight: 300;
   }
 
   .intro-info p{
@@ -409,11 +435,26 @@ footer{
   .creations__grid > div {
     height: 30rem;
     padding: 2rem;
+    transition: 0.15s ease-in;
+  }
+
+  .creations__grid > div:hover {
+    letter-spacing: 1px;
+  }
+
+  .creations__grid > div::before {
+    transition: 0.15s ease-in;
+  }
+
+  .creations__grid > div:hover::before{
+    background-color: rgba(0, 0, 0, .70);
   }
 
   .creations__grid > div > h2 {
     font-size: 1.5rem;
   }
+
+
 
   .creations__grid  > div:nth-child(1){
     background-image: url(../images/desktop/image-deep-earth.jpg);
